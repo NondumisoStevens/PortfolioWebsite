@@ -1,0 +1,697 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #0A0F22;
+    margin: 0;
+    padding: 0;
+    
+  
+
+}
+
+.heading{
+    color:#56B2BB;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color:#BAC7CC;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li:not(:nth-child(4)) a::after{
+
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #56B2BB;
+    position: absolute;
+    left: 0%;
+    bottom: -6px;
+    transition: 0.5s; 
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+nav .fas{
+    display: none;
+}
+
+
+.brand{
+    color:#56B2BB;
+    
+}
+
+
+
+.hero {
+    color:#BAC7CC;
+    margin-top: 12%;
+    margin-left: 20%;
+  
+}
+
+.hero h2, h1, h5, p{
+    padding: 10px;
+}
+
+.stand-out-text{
+    color: #FFFFFF;
+}
+
+.hero h1{
+    font-size: 50px;
+}
+
+.hero h5{
+    font-size: 15px;
+    
+}
+
+.hero h1 span{
+    color: #56B2BB;
+}
+
+.hero p{
+    font-size: 20px;
+    width:40%;
+}
+    
+
+.btn{
+    display: inline-block;
+    /* background-color: transparent; */
+    border-radius: 500px;
+    background-color:#56B2BB;
+    border-color:#FFFFFF;
+    border: solid;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 10px 20px;
+
+    
+}
+
+.btn:hover{
+    transform: translate(-5px);
+}
+
+.hero a{
+    text-decoration: none;
+    /* color:#56B2BB; */
+    color:#FFFFFF;
+
+}
+
+
+.resume{
+
+    /* background-color: transparent; */
+    display: inline-block;
+    background-color: #56B2BB;
+    border-color:#FFFFFF;
+    width: 90px;
+    height: 35px;
+    /* color:  #56B2BB; */
+    color:#FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 500px;
+    padding: 5px 10px;
+
+}
+
+.resume:hover{
+    transform: translate(-5px);
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #56B2BB;
+    border-radius: 10px;
+}
+
+
+/*about section*/
+
+
+
+.about{
+    width: 100%;
+    height: 100vh;
+}
+.flex-container{
+    display: flex;
+   
+    
+}
+.about h2{
+    margin-left: 20.5%;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+}
+
+.content{
+    color:#BAC7CC;
+    width: 45%;
+    font-size: large;
+    line-height: 25px;
+    margin-left: 20.5%;
+    
+   
+    
+}
+.about img{
+    width: 25%;
+    filter: grayscale(100%) brightness(0.5) sepia(100%) hue-rotate(180deg);
+    transition: filter 0.3s ease;
+    margin-left: 35px;
+    margin-top: 80px;
+    /* border: 5px solid #56B2BB; */
+   box-shadow: 1px 1px 20px #56B2BB;
+ 
+}
+
+.about img:hover{
+    filter: none;
+}
+
+.content a{
+    text-decoration: none;
+    color:#56B2BB ;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #56B2BB;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none ;
+    margin: 10px 0;
+    color: #BAC7CC;
+}
+.tab-contents ul li span{
+    color: #56B2BB;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+
+
+
+
+
+/*Projects*/
+
+#p-heading{
+    margin-top: 300px;
+}
+.projects p{
+    color: #BAC7CC;
+    
+}
+.projects h3{
+    color: #56B2BB;
+}
+.heading{
+    margin-left: 20.5%;
+    margin-bottom: 35px;
+    margin-top: 100px;
+}
+.p-card-first{
+    display: flex;
+    /* background-color: black; */
+    width: 100%;
+    /* border: 5px black solid; */
+    height: auto;
+    justify-content: center;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+   
+}
+
+.wrapper{
+    
+    display: flex;
+
+}
+
+.wrapper .bottom-card{
+    border: 5px white solid;
+    width:200px;
+    height: 200px;
+    margin-top: 20px;
+}
+.wrapper .top-card{
+    border: 2px solid;
+    width:200px;
+    height: 200px;
+    margin-left: 20px;
+    position: absolute;
+    background-size: cover;
+    border: #56B2BB 5px solid;
+   
+}
+.des{
+    width:30%;
+    height: auto;
+    align-self: center;
+    margin-left: 100px;
+    
+}
+.title{
+    display: flex;
+    justify-content:space-around;
+}
+.p-des-first{
+    display: flex;
+    /* background-color: black; */
+    width: 100%;
+    /* border: 5px black solid; */
+    height: auto;
+    justify-content: center;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+   
+}
+.p-des-first .des{
+    margin-right: 90px;
+}
+hr{
+    display: none;
+    width: 90px;
+    border-top: 4px solid white;
+}
+
+.title h3{
+    color:white;
+}
+
+
+
+/*footer*/
+.footer{
+    align-items: center;
+    color:#BAC7CC;
+    margin-top: 150px;
+    width:100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+.icons img{
+    margin: 10px;
+    width: 20px;
+    cursor: pointer;
+}
+
+ .footer-content .copyright{
+    width: 10px;
+} 
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+    /*******************Projects***********************/
+    .p-card-first{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        margin-bottom: 60px;
+        /* flex-wrap: wrap; */
+       
+    }
+    .des{
+        width:auto;
+        height: auto;
+        align-self: flex-start;
+        margin-left: 30px;
+        line-height: 25px;
+        margin-top: 20px;
+        
+    }
+    
+    .wrapper{
+        align-self: center;
+    }
+
+    .p-des-first .wrapper{
+
+        margin-right: 70px;
+
+    }
+    hr{
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+
+      /*******************HERO***********************/
+      .banner{
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+        margin-bottom: 100px;
+    }
+
+    .hero {
+        color:#BAC7CC;
+        margin-top: 20%;
+        margin-left: 10%;
+        
+      
+    }
+    
+    .hero h2, h1, h5, p{
+        padding: 5px;
+        width: 90%;
+    }
+
+
+    .hero h1{
+        font-size: 25px;
+    }
+    
+    .hero h4{
+        font-size: 15px;
+        
+    }
+    
+    .hero p{
+        font-size: 20px;
+        width:90%;
+    }
+
+    nav .fas{
+        display: block;
+        margin-left: auto;
+       
+        
+    }
+    nav ul {
+        background:transparent;
+        backdrop-filter: blur(4px);
+        position: fixed;
+        top:0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block ;
+        margin-left: 25px;
+        padding-bottom: 10px;
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+
+     /*******************ABOUT***********************/
+
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+     
+        
+    }
+    .about{
+        width: 100%;
+        height: auto;
+    }
+
+    .about h2{
+        color:#56B2BB;
+        margin-left: 10%;
+        padding-bottom: 10px;
+    
+    }
+    
+    .content{
+        color:#BAC7CC;
+        /* width: 30%; */
+        font-size:14px;
+        line-height: 15px;
+        margin-left: 8%;
+        flex-basis: 100%;
+        
+       
+        
+    }
+
+
+    .about img{
+        width: 40%;
+         margin-left: 30%;
+         margin-top: 80px;
+        
+       
+     
+    }
+
+    .tab-links{
+        font-size: 12px;
+        margin-right: 20px;
+        margin-left: 0;
+    }
+
+
+
+}
+
+
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+     /*******************HERO***********************/
+
+    .banner{
+        width: 100%;
+        height: 80vh;
+        overflow-x: hidden;
+        margin-bottom: 100px;
+    }
+
+    nav ul li a{
+
+        font-size: 22px;
+    }
+
+    .hero {
+        color:#BAC7CC;
+        margin-top: 20%;
+        margin-left: 10%;
+        
+      
+    }
+    
+    .hero h2, h1, h5, p{
+        padding: 5px;
+        width: 90%;
+    }
+
+    .hero p{
+        width:90%;
+    }
+
+    .contact-me{
+
+        width: 180px;
+        height: 70px;
+    }
+
+
+    /*****************************************ABOUT***************************/
+
+
+    .about{
+        height: auto;
+    }
+    .about h2{
+        font-size: 50px;
+        margin-left: 10%;
+        padding-bottom: 10px;
+    
+    }
+    
+    .content{
+        width: 90%;
+        font-size: 22px;
+        line-height: 28px;
+        margin-left: 10%;
+        
+       
+        
+    }
+    .about img{
+        width: 60%;
+        margin-left: 35px;
+        margin-top: 80px;
+       
+     
+    }
+    
+    .tab-links{
+        font-size: 22px;
+    }
+
+
+
+    /*****************************************Projects***************************/
+
+    .projects{
+        height: 100vh;
+       
+    }
+    
+    .heading{
+       font-size: 40px;
+    }
+    
+    
+    
+      
+      .grid-item {
+        border: 5px solid #56B2BB; 
+        height: auto;
+        margin-left: 20.5%;
+        grid-template-columns: 40% 40%;
+
+        gap: 10px;
+       
+        
+      }
+      .grid-item img{
+        width: 60px;
+      }
+    
+      .grid-item .top{
+        margin-bottom: 30px;
+      }
+    
+      .grid-item p{
+        font-size: 22px;
+        line-height: 28px;
+        width: auto;
+      }
+    
+    
+
+        
+    
+
+
+} 
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
